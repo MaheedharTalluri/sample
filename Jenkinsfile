@@ -4,6 +4,7 @@ agent any
 stages{
 	stage('get json'){
 	steps{
+		sh "echo ${JSON}"
 		testjson("${JSON}")
  
 	}
