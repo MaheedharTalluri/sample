@@ -9,11 +9,28 @@ stages{
  
 	}
 	}
-	stage('Get values'){
+	stage('Create Job'){
 	steps{
 		createjob("${DSL_NAME}","${JENKINS_NAME}")
  
 	}
 	}
+	stage('Fetch jobs list'){
+	steps{
+		jenkinscollector()
+ 
+	}
+	}
+	stage('Last Successful Build Status'){
+	steps{
+		lastsuccessfulbuild("task")
+ 
+	}
+	}
+	
+	
+	
+	
+	
 }
 }
