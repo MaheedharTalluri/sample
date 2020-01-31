@@ -5,7 +5,7 @@ stages{
 	stage('get json'){
 	steps{
 		sh "echo ${JSON}"
-		testjson("${JSON}")
+		testjson(JSON)
  
 	}
 	}
