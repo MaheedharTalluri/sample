@@ -9,6 +9,16 @@ stages{
  
 	}
 	}
+	
+	
+	
+	stage('Delete Job'){
+	steps{
+		Deletejob("freestyle")
+ 
+	}
+	}
+	
 	stage('Fetch jobs list'){
 	steps{
 		jenkinscollector()
