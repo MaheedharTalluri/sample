@@ -11,7 +11,7 @@ stages{
 	}
 	stage('Create Job'){
 	steps{
-		createjob('freestyle.groovy',"${JENKINS_NAME}")
+		createjob('freestyle.groovy','newfreestyle')
  
 	}
 	}
