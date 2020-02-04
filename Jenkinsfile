@@ -2,13 +2,13 @@
 pipeline {
 agent any 
 stages{
-	stage('get json'){
-	/*steps{
+	/*stage('get json'){
+	steps{
 		sh "echo ${JSON}"
 		testjson(JSON)
  
-	}*/
 	}
+	}*/
 	stage('Create Job'){
 	steps{
 		createjobjson(JSON)
