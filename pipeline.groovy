@@ -1,8 +1,3 @@
-
-
-
-
-
 pipelineJob('Test'){
 definition{
 cpsScm {

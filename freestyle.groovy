@@ -8,4 +8,13 @@ freeStyleJob('Test') {
 		}
 		}
 	}
+	steps{
+		maven{
+		goals('clean install')
+		}
+	
+	}
+	triggers{
+	cron('H * * * *')
+	}
 }
