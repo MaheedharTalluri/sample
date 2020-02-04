@@ -3,15 +3,15 @@ pipeline {
 agent any 
 stages{
 	stage('get json'){
-	steps{
+	/*steps{
 		sh "echo ${JSON}"
 		testjson(JSON)
  
-	}
+	}*/
 	}
 	stage('Create Job'){
 	steps{
-		createjob('freestyle.groovy','newfreestyle')
+		createjobjson(JSON)
  
 	}
 	}
