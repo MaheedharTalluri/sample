@@ -67,6 +67,16 @@ stages{
  
 	}
 	}
+	
+	
+	stage('Builds of a job'){
+	steps{
+		buildsofjob()
+ 
+	}
+	}
+	
+	
 	stage('Last Successful Build Status'){
 	steps{
 		lastsuccessfulbuild("task")
