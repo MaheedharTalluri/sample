@@ -81,7 +81,7 @@ stages{
 	
 	stage('adding Credentials'){
 	steps{
-		addcreds()
+		getsystemconfig()
  
 	}
 	}
