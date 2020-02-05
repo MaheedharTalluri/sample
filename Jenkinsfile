@@ -53,7 +53,12 @@ stages{
 	}
 	}
 	
-	
+	stage('Rename job'){
+	steps{
+		renamejob()
+ 
+	}
+	}
 	
 	
 	stage('Fetch jobs list'){
