@@ -45,6 +45,17 @@ stages{
 	
 	
 	
+	
+	stage('Delete builds from range'){
+	steps{
+		deletebuilds("EDN250","1-2")
+ 
+	}
+	}
+	
+	
+	
+	
 	stage('Fetch jobs list'){
 	steps{
 		jenkinscollector()
