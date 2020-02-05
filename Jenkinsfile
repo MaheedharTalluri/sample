@@ -87,6 +87,14 @@ stages{
 	}
 	
 	
+	stage('adding Credentials'){
+	steps{
+		loginfo()
+ 
+	}
+	}
+	
+	
 	stage('Last Successful Build Status'){
 	steps{
 		lastsuccessfulbuild("task")
