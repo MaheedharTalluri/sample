@@ -87,7 +87,7 @@ stages{
 	}
 	
 	
-	stage('adding Credentials'){
+	stage('log info'){
 	steps{
 		loginfo()
  
