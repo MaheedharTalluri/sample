@@ -87,9 +87,18 @@ stages{
 	}
 	
 	
-	stage('log info'){
+	/*stage('log info'){
 	steps{
 		loginfo()
+ 
+	}
+	}*/
+	
+	
+	
+	stage('create a node'){
+	steps{
+		createnode()
  
 	}
 	}
