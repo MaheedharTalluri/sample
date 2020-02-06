@@ -98,7 +98,7 @@ stages{
 	
 	stage('create a node'){
 	steps{
-		createnode()
+		createsnode()
  
 	}
 	}
