@@ -26,7 +26,7 @@ stages{
 	
 	stage('Build Delay'){
 	steps{
-		builddelay("task1")
+		build-delay("task1")
 	}
 	}
 	stage('disable job'){
