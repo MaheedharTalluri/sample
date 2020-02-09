@@ -20,7 +20,7 @@ stages{
 	}
 	stage('trigger build'){
 	steps{
-		jenkins_buildjob("task")
+		jenkins_triggerbuild("task")
 	}
 	}
 	
