@@ -5,7 +5,7 @@ stages{
 
 	stage('Create Job'){
 	steps{
-		createjobjson(JSON)
+		jenkins_createjob(JSON)
  
 	}
 	}
@@ -14,30 +14,30 @@ stages{
 	
 	stage('Delete Job'){
 	steps{
-		Deletejob("freestyle")
+		jenkins_deletejob("freestyle")
  
 	}
 	}
 	stage('trigger build'){
 	steps{
-		build("task")
+		jenkins_buildjob("task")
 	}
 	}
 	
 	stage('Build Delay'){
 	steps{
-		build_delay("task1")
+		jenkins_schedulebuild("task1")
 	}
 	}
 	stage('disable job'){
 	steps{
-		disablejob("job")
+		jenkins_disablejob("job")
 	}
 	}
 	
 	stage('enable job'){
 	steps{
-		enablejob("jobs")
+		jenkins_enablejob("jobs")
 	}
 	}
 	
