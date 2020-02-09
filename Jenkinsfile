@@ -6,6 +6,7 @@ stages{
 	stage('Create Job'){
 	steps{
 		jenkins_createjob(JSON)
+		jenkins_deletejob("job")
  
 	}
 	}
